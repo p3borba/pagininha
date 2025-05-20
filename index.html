@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nocturna - Vestuário Gótico</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel+Decorative&family=Grenze+Gotisch&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <p>⚰️ Use o código <span class="discount-code">NOCTURNA20</span> para 20% OFF | Entrega em 3-5 dias úteis</p>
+    </div>
+    <nav>
+      <div class="logo">🦇 Nocturna</div>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#collections" class="nav-link">Coleções</a></li>
+        <li><a href="#about" class="nav-link">Manifesto</a></li>
+        <li><a href="#contact" class="nav-link">Oráculo</a></li>
+      </ul>
+      <div class="icons">
+        <span class="icon" id="cartIcon">🛒<span class="cart-count">0</span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>EMBRACE THE DARKNESS</h1>
+      <p class="hero-subtitle">Vestuário para almas noturnas</p>
+      <button id="shopBtn" class="cta-button">EXPLORE O ABISMO</button>
+    </div>
+    <div class="candle-animation"></div>
+  </section>
+
+  <section class="collections" id="collections">
+    <h2 class="section-title">COLEÇÕES MALDITAS</h2>
+    <div class="collection-grid">
+      <div class="item" id="corsetItem">
+        <img src="https://i.pinimg.com/736x/f1/f9/ce/f1f9ce6c182e451a04b12dd723fc6dc3.jpg" alt="Corset Gótico">
+        <p class="item-title">CORSETS</p>
+        <div class="item-overlay">
+          <button class="item-btn">VER MAIS</button>
+        </div>
+      </div>
+      <div class="item" id="hoodieItem">
+        <img src="https://i.pinimg.com/736x/fc/06/3f/fc063fbe5fe34f40ce04d8d15aca80cc.jpg" alt="Escapulario Gótico">
+        <p class="item-title">ESCAPULARIO</p>
+        <div class="item-overlay">
+          <button class="item-btn">VER MAIS</button>
+        </div>
+      </div>
+      <div class="item" id="dressItem">
+        <img src="https://i.pinimg.com/736x/09/93/77/0993778b0a86be4bd2ad5c2fb0ca0da2.jpg" alt="Aneis Gótico">
+        <p class="item-title">ANEIS</p>
+        <div class="item-overlay">
+          <button class="item-btn">VER MAIS</button>
+        </div>
+      </div>
+      <div class="item" id="jewelryItem">
+        <img src="https://i.pinimg.com/736x/c9/cc/04/c9cc04138b1215b2f286ac57a9261f3a.jpg" alt="Jóias Góticas">
+        <p class="item-title">JOIAS</p>
+        <div class="item-overlay">
+          <button class="item-btn">VER MAIS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2 class="section-title">NOSSO MANIFESTO</h2>
+      <p class="manifesto-text">"Na escuridão encontramos nossa verdadeira essência. Nossa marca celebra a beleza sombria, a elegância macabra e o estilo que transcende o mundano. Cada peça é um ritual, cada detalhe uma invocação."</p>
+      <div class="sigil"></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">CONSULTE O ORÁCULO</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Seu Nome Maldito" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Seu Email Profano" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" placeholder="Sua Mensagem do Além..." required></textarea>
+      </div>
+      <button type="submit" class="cta-button">ENVIAR SACRIFÍCIO</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">NOCTURNA</div>
+      <div class="social-links">
+      </div>
+      <p class="copyright">&copy; 2025 Nocturna. Todos os direitos amaldiçoados.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <img id="modalImage" src="" alt="">
+      <button class="cta-button" id="addToCart">ADICIONAR AO CARRINHO</button>
+    </div>
+  </div>
+
+  <div class="scrolling-text-container">
+    <div class="scrolling-text">NOCTURNA • VESTUÁRIO GÓTICO • ALMAS NOTURNAS • ELEGÂNCIA MACABRA • NOCTURNA • VESTUÁRIO GÓTICO • ALMAS NOTURNAS • ELEGÂNCIA MACABRA •</div>
+  </div>
+
+  <div class="parallax-layer layer-1" data-speed="0.1"></div>
+  <div class="parallax-layer layer-2" data-speed="0.3"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
